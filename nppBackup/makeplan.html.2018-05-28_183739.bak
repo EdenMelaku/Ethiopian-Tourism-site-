@@ -1,0 +1,132 @@
+<!Doctype html>
+<html>
+    <head>
+	<style>
+
+
+	</style>
+	
+	<script type="text/javascript">
+	/*function do(){
+	
+	
+	if(f.bb.checked==true){
+	alert ("bahir dar");
+	}
+	else{
+	akert ("other");
+	}
+	
+	}	
+	function change(v){
+	bd=document.getElementById("0").checked;
+	alert(bd);
+	
+	
+	
+	}
+	*/
+
+	function direct() {
+
+   alert("hey");
+}
+	</script>
+        <title>Website</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+		
+    </head>
+    <body>
+        <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i>  @gmail.com</p>
+                <p><i class="fa fa-mobile">  </i>  +25</p>
+                <p id="icon"><a href="http://facebook.com/hena12" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/hena12" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 <p style="text-transform: uppercase">tourism.<span style="font-size: 20px">com</span></p>
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-mortar-board (alias)"></i>my planner</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">edit plan</a> </p>
+	   <p><a href="school.html#ele">make plan</a> </p>
+       <p><a href="school.html#hs">view plan</a> </p>
+       
+    </div>
+                    </div>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>Connector</a></p>
+                    <p><a href="blogg.html"><i class="fa fa-envelope"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		
+		<h1></h1>
+		<br/><br/><br/><br/><br/><br/>
+		<form action="makeplan.php" method="post" name ="f">
+		<br/><br/><br/>
+		CHOOSE PLACES TO VISIT<br/><br/><br/> 
+<div>
+		<input type="checkbox" id="0" onclick="direct()" /> BAHIR DAR<br/>
+		<input type="checkbox" id="1" /> AXUM<br/>
+		<input type="checkbox" id="2" /> HAWASSA<br/>
+		<input type="checkbox" id="3" /> HARAR<br/>
+		<input type="checkbox" id="4"/> GONDER<br/>
+		
+		<input type="checkbox" id="5"/>ADDIS ABABA<br/>
+		<input type="checkbox" id="6" />JIMMA<br/>
+		<input type="checkbox" id="7"/>DEBRE ZEIT<br/>
+		
+		<input type="checkbox" id="8" />ARBAMINCH<br/>
+		<input type="checkbox" id="9"/>LALIBELA<br/>
+</div>	<br/><br/>
+<div>
+     CHOOSE DATE OF YOUR VISIT<br/> 
+	 <input type="date" ><br/>
+</div>	
+<br/>
+<div>
+CHOSSE A TOUR AND TRAVEL AGENT<br/> <input type="radio" id="0" value ="ru" /> RUHAMMA<br/>
+		<input type="radio" id="1" value="ab" /> ABYSINYA<br/>
+		<input type="radio" id="2" value="lu"/> LUCY<br/>
+		<input type="radio" id="3" value="et"/> ETHIO<br/>
+		<input type="radio" id="4" value="ax"/>  SELAM<br/><br/><br/>
+
+</div>
+<div>
+
+
+</div>
+		<br/><br/><br/><br/><br/>
+		<input type="button" value="submit" onclick="direct()">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></form>
+		
+		
+		
+		
+    </body>
+</html>

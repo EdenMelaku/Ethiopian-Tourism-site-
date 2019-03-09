@@ -1,0 +1,100 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website</title>
+     
+        <style type="text/css">
+		div{
+		 border: 2px solid #fff;
+		 background: #29293d;
+		 font-size:14px;
+		
+		}
+		</style>
+       
+       <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+		 <link rel="stylesheet" type="text/css" href="style/css/newStyle.css"/>
+		
+    </head>
+    <body>
+    
+		
+		<?php
+		
+//include 'run.php';
+$usern=$_GET["uname"];
+
+$m=0;
+
+$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysqli_error());
+}
+else{
+	mysqli_select_db($conn,'tourismSite');
+	$ret="select * from blog ";
+$q=mysqli_query($conn,$ret);
+$m=0;
+if(!$q){
+		die(" connection failed ".mysqli_error($conn));
+}else{
+$m=0;
+while($row=mysqli_fetch_assoc($q)){
+	$m=1;
+			
+$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysql_error());
+}
+else{
+	mysqli_select_db($conn,'tourismSite');
+	$un=$row['username'];
+	$ret="select * from users where username='$un'";
+$q=mysqli_query($conn,$ret);
+if(!$q){
+echo"connection problem occured ".mysqli_error($conn);	
+	
+}
+
+else{$nam;
+while($ro=mysqli_fetch_assoc($q)){
+	$nam=$ro['fname']." ".$ro['lname'];
+	
+}
+}
+	
+	echo"
+	<div >
+	<p  > $nam</p>
+	<h3  > {$row['message'] }</h3>
+	<br/>
+	<br/><br/><br/>
+	</div>
+	";
+	}
+	}
+
+}
+	if($m==0){
+		
+		echo"no blogs to display";
+	}
+	
+	
+	}
+		
+		
+
+		
+		
+		?>
+		
+		
+		
+		
+		
+		
+    </body>
+</html>

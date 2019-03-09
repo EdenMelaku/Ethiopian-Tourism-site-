@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website</title>
+     
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+    
+		<br/><br/><br/><br/><br/><br/>
+		<?php
+		$pid=$_GET['pid'];
+$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysql_error());
+}
+else{
+	mysqli_select_db($conn,'tourismSite');
+	
+	$ret="delete * from plan where pid=$pid";
+	
+
+$q=mysqli_query($conn,$ret);
+if(!$q){
+	
+	die("  failed to delete data ".mysqli_error($conn));
+               }
+			   
+			   
+			   else{
+echo"plan sucessfully deleted ";
+}
+?>
+		
+		
+		
+		
+		
+		
+    </body>
+</html>

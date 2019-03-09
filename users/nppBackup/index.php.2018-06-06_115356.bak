@@ -1,0 +1,161 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+             <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i><?php
+			$uname=$_GET["uname"];
+			
+				
+				//
+				
+				
+				$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysql_error());
+}
+else{
+	mysqli_select_db($conn,'tourismSite');
+	$ret="select * from users where username='$uname'";
+$q=mysqli_query($conn,$ret);
+if(!$q){
+echo"connection problem occured ".mysqli_error($conn);	
+	
+}
+
+else{
+while($row=mysqli_fetch_assoc($q)){
+	$name=$row['fname']." ".$row['lname'];
+	print"$name";
+}
+}
+}				
+				
+				$mp="http://localhost/ethioTourism.com/users/makeplann.php?uname=".$uname;
+				$index="http://localhost/ethioTourism.com/users/index.php?uname=".$uname;
+				$vp="http://localhost/ethioTourism.com/users/viewplan.php?uname=".$uname;
+				$ep="http://localhost/ethioTourism.com/users/editplan.php?uname=".$uname;
+				$des="http://localhost/ethioTourism.com/users/tourist.php?uname=".$uname;
+				$aeth="http://localhost/ethioTourism.com/users/abtEthiopia.php?uname=".$uname;
+				$age="http://localhost/ethioTourism.com/users/agents.php?uname=".$uname;
+			    $gal="http://localhost/ethioTourism.com/users/gallery.php?uname=".$uname;
+				$abtus="http://localhost/ethioTourism.com/users/about.php?uname=".$uname;
+				$ctus="http://localhost/ethioTourism.com/users/contact.php?uname=".$uname;
+				$blog="http://localhost/ethioTourism.com/users/blog.php?uname=".$uname;
+				
+				?></p>
+                <p><i class="fa fa-mobile">  <a href="logout.php" style="color:white;text_decoration:none">logout</a> </i> </p>
+                <p id="icon"><a href="http://facebook.com/" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://twitter.com/"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://pinterest.com/"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="<?php print "$index";?>"><i class="fa fa-home"></i>Home</a></p>
+                 <div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-pencil"></i>my planner</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href= " <?php print "$mp";?>" ><i class="fa fa-calendar"></i>make plan</a> </p>
+	   <p><a href="<?php print "$vp";?>"><i class="fa fa-list-alt"></i>view plan</a> </p>
+       
+       
+    </div>
+         </div>
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="<?php print "$des";?>">destinations</a> </p>
+	   <p><a href="<?php print "$aeth";?>">about ethiopia</a> </p>
+       <p><a href="<?php print "$age";?>">agents</a> </p>
+	   
+       
+    </div>
+                    </div>
+					<p><a href="<?php print "$abtus";?>"><i class="fa fa-mortar-board (alias)"></i>ABOUT US </a></p>
+					<p><a href="<?php print "$ctus";?>"><i class="fa fa-mortar-board (alias)"></i>contact US </a></p>
+                    <p><a href="<?php print "$blog";?>"><i class="fa fa-envelope"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+          
+                 
+                 
+            
+               
+        
+            
+    
+        <div id="container">
+            <h1>WELLCOME TO ETHIOPIAN TOURISM SITE</h1>
+           
+                  
+        </div>
+        			  
+		<iframe src="" width="10%" height="600px"
+                  align ="left"
+                marginwidth="0" marginheight="10">
+				 
+				<marquee direction="up" scrollamount="5"  >
+ <img src="img/country/1.jpg" alt="slide" width="50px" height="30px" border="5px" class="im" />
+  <img src="img/country/2.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+   <img src="img/country/3.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+    <img src="img/country/4.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+ <img src="img/country/5.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+  <img src="img/country/6.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+   <img src="img/country/7.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+    <img src="img/country/8.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+	 <img src="img/country/9.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+	 <img src="img/country/10.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+</marquee>
+				 
+         </iframe>
+        
+     <iframe src="blog.php" width="50%" height="1000px"
+                 align ="center"
+                marginwidth="10" marginheight="10"  >
+           </iframe>
+
+    
+          <iframe src="log.html" width="36%" height="1000px"
+                 align ="right"
+                marginwidth="10" marginheight="10"  >
+           </iframe>
+			  
+			  
+			  
+			  
+        
+    </body>
+</html>

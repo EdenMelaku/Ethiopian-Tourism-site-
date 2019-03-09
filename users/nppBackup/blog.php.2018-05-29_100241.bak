@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website</title>
+     
+        <style type="text/css">
+		.an{
+	border: 0.5px solid #fff; color:black;
+		 
+		margin-left: 14px;
+		margin-top: 5px;
+		margin-right: 14;
+	
+		
+		}
+		.an p{	 
+		color:white;
+		font-size:34px;
+			
+		}
+		.an h3{	 	 
+			 font-size:14px;
+			
+		}
+		</style>
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+    
+		<br/><br/><br/><br/><br/><br/>
+		<?php
+		
+
+
+
+$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysql_error());
+}
+else{
+	mysqli_select_db($conn,'tourismSite');
+	
+	$ret="select * from blog ";
+	
+
+$q=mysqli_query($conn,$ret);
+if(!$q){
+	
+	die("  failed yo get data ".mysqli_error($conn));
+               }
+			   
+			   
+			   else{
+$m=0;
+while($row=mysqli_fetch_assoc($q)){
+	$m=1;
+	print("
+	<div class=\"an\">
+	
+	<p  > {$row['username'] }</p>
+	<h3  > {$row['text'] }</h3>
+	
+	
+	</div>
+	");
+}
+
+	if($m==0){
+		
+		echo"no blogs to display";
+	}
+	
+	
+	
+	
+}
+}
+		
+		
+		
+		
+		
+		?>
+		
+		
+		
+		
+		
+		
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+    <head>
+	     <style>
+        #biography{
+    width: 100%;
+    height: 100%;
+    background: #E0E0E0;
+}.header{
+    
+ font-family: inherit;
+    font-weight: 100;
+ text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+}
+         #profilePic{
+    margin-left: 9%;
+    float: left;
+    width: 400px;
+    margin-top: 10px;
+}
+ #bioText{
+    margin-top: 15px;
+    margin-left: 30px;
+    word-spacing: 5px;
+    width: 700px;
+    float: left;
+}
+        
+        </style>
+        <title>Website</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+        <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i>  @gmail.com</p>
+                <p><i class="fa fa-mobile">  </i>  +25</p>
+                <p id="icon"><a href="http://facebook.com/hena12" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/hena12" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 <p style="text-transform: uppercase">tourism.<span style="font-size: 20px">com</span></p>
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <p><a href="about.html"><i class="fa fa-book"></i>About us</a></p>
+                 <p><a href="tourist.html">
+                     <i class="fa fa-mortar-board (alias)"></i>Destination</a></p>
+            
+                    <p><a href="contact.html"><i class="fa fa-envelope"></i>Contact Us</a></p>
+               
+             </div>
+            </div>
+        </div>
+		
+		   <div>
+                 <div id="biography">
+           <h1 class="header">ABOUT ETHIOPIA</h1>
+            <div id="profilePic">
+               <img src="image/2.gif" width="400px" height="450px"/> 
+            </div>
+            <div id="bioText">
+            <p>
+            Ethiopia has traditionally identified its green-yellow-red national flag with the rainbow that, according to the book of Genesis in the Bible, God set in the heavens after the Flood. Pennants of those three colours had been displayed before the first official flag was established by Emperor Menilek II on October 6, 1897; his flag bore on the yellow stripe the first letter of his name in Amharic script. Later the imperial coat of arms—consisting of the “Conquering Lion of Judah,” a lion holding a staff topped by a cross with ribbons in the three national colours—appeared on the flag when it was used for official purposes. The lion symbolically asserted that Emperor Menilek I had been the son of the Queen of Sheba and the biblical King Solomon. The first legal definition was given to the lion flag in November 1932, soon after the coronation of Emperor Haile Selassie. It remained in use until the overthrow of the empire in 1974, except for those years (1936–41) when the country was occupied by Italy.<br><br>
+                In 1975 a revolutionary government established a new coat of arms with socialist symbols. In 1987 President Mengistu Haile Mariam proclaimed the People's Democratic Republic of Ethiopia under a flag with an even more openly Marxist design, including a red star at the top. The rebels who overthrew his regime in 1991 flew a simple green-yellow-red tricolour. Finally, the new constitution for the Federal Democratic Republic of Ethiopia, adopted on February 6, 1996, added a central blue disk with a yellow outlined and rayed star. The star represents the unity of all Ethiopian nationalities, its rays the bright prospects for their future. Blue is for peace, yellow for hope, justice, and equality. Red represents sacrifice for freedom and equality, while green is equated with labour, development, and fertility.
+            </p>
+            </div>
+        </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html >
+<html>
+<head>
+
+<title>SWE-HOME PAGE</title>
+</head>
+<body>
+<?php
+//include 'run.php';
+$nam=$_POST["name"];
+
+$agent=$_POST["agent"];
+$purpose=$_POST["purpose"];
+$dat=$_POST["date"];
+
+
+$date=date("Y-m-d H:i:s",strtotime($dat));
+
+//$choice=$_POST["choice"];
+//$place=array($_POST["op1"],$_POST["op2"],$_POST["op3"],$_POST["op4"],$_POST["op5"],$_POST["op6"],$_POST["op7"]
+  //           $_POST["op8"],$_POST["op9"],$_POST["op10"]);
+$placeName=$_POST["cb"];
+$name=array('BAHIR DAR','AXUM','HAWASSA','HARAR','GONDER','ADDIS ABABA','JIMMA','DEBRE ZIET','ARBA MINCH','LALIBELA');
+//$dis=array(array(0,1,2,3),array(1,0,5,6),array(2,5,0,7),array(3,6,7,0));
+
+$dis=array(array(0,512.1,766.9,1123.8,172.1,484.5,645.2,540,979.3,307.6),
+array(519.2,0,1265.2,1203.5,349.5,997.8,1164,1053.4,1490.1,392.9),
+array(966.9,1265.2,0,646.5,939,282.4,403.8,338,273.4,987.5),
+array(1123.8,1203.5,646.5,0,1295.9,0,519.4,874.4,575,872.6,925.8),
+array(172.1,349.5,93.9,1295.9,0,656.6,817.3,712.2,1151.4,135.5),
+array(484.5,997.8,282.4,519.4,656.6,0,355,55.6,499,792.1),
+array(645.2,1164,403.8,874.4,812.3,355,0,410.6,375.2,954.2),
+array(540,1053.4,338,575,712.2,55.6,410,0,444,847.1),
+array(979.3,1490.1,273.4,872.6,1151.4,499,375.2,444,0,1212.4),
+array(307.6,392.9,987.5,925.8,135.5,792.1,954.2,847.1,1291.1,0));
+//$pass=$_POST["op2"];
+$m=0;
+$place=array('1','1','1','0');
+$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysql_error());
+}
+else{
+	mysqli_select_db($conn,'touristSite');
+	$chosen=array();
+	$j=0;
+	for($i=0;$i<count($place);$i++){
+		if($place[$i]==1){
+			
+		$chosen[$j]=$placeName[$i];
+		print "$chosen[$j]\n";
+		$j++;}
+		
+	}
+	$size=1;
+	$i=count($chosen);
+	while($i==1){
+		$size=$size*i;
+	}
+	
+	$route=array();
+	$dist=array();
+	
+	/////////////////////////////////////////////////////////////
+	//implode("|",$type);
+	//$array=explode(" ",$str); 
+	
+	$str = implode("",$placeName);
+	print "$str\n";
+$len=0;
+function permute($str,$i,$n) {
+   if ($i == $n){
+	   global $route;
+	   $route[]=$str;
+      // print "thiisssss    $str\n";
+       // echo"<br/>";
+		
+   }
+   else {
+        for ($j = $i; $j < $n; $j++) {
+          swap($str,$i,$j);
+          permute($str, $i+1, $n);
+          swap($str,$i,$j); // backtrack.
+       }
+   }
+}
+
+
+// function to swap the char at pos $i and $j of $str.
+function swap(&$str,$i,$j) {
+    $temp = $str[$i];
+    $str[$i] = $str[$j];
+    $str[$j] = $temp;
+}   
+	
+permute($str,0,strlen($str)); // call the function.
+foreach ($route as $key=>$val){
+	
+	//echo" thatttt  '$val'<br/>";
+	
+}
+
+
+foreach ($route as $key=>$val){
+	//echo "newww then  $val";
+	$arr =explode("|",$val);
+$arr=str_split($val,1);	
+	//echo" new  this   $arr[$key] <br/>";
+	
+	$sum=0;
+	for($i=0;$i<count($arr)-1;$i++){
+		$num=$i+1;
+		$R1=$arr[$i];
+		$R2=$arr[$num];
+	$sum =$sum + $dis[$R1][$R2];
+	    
+		//echo" meeee '$dis[$R1][$R2]'<br/>";
+	}
+		//echo" the  dis of $val=> $sum  <br/>";
+	$dist[]=$sum;
+	
+	
+}
+//echo'<br/> the distnce=   ';
+$small=0;
+foreach ($dist as $key=>$val){
+	if($dist[$small]>$val){
+		$small=$key;
+		
+	}
+	echo"'$val'<br/>";
+	
+}
+
+$ch=str_split($route[$small],1);
+
+echo"<br/> the minimum distnce=   '$dist[$small]'  km the route is  'route[small]' ";
+
+echo"START";
+foreach ($ch as $key=>$val){
+	
+	echo"  &nbsp&nbsp&nbsp&nbsp    TO &nbsp&nbsp&nbsp&nbsp     $name[$val]  &nbsp&nbsp&nbsp&nbsp      TO &nbsp&nbsp&nbsp&nbsp    ";
+	
+}
+echo"END";
+
+$planID=$nam.'1';
+$tourGuideID=$agent;
+$username=$uname;
+$m=$route[$small];
+
+echo"<br/>'$route[$small]'<br/> '$planID'<br/>'$username'<br/>'$tourGuideID'<br/>'$agent'<br/>'$route[$small]'<br/>'$nam'";
+$sq="INSERT INTO 'plan'('planId', 'touristId', 'tourGuideID', 'tour_TravelAgent ' , 'placeSequence', 'plan_name')
+ VALUES ('$planID','$username','$tourGuideID','$agent','{$route[$small]}','$nam')";
+ 
+ mysqli_select_db($conn,'tourismSite');
+ $query = "INSERT INTO plan(planId, touristId, tourGuideID, tour_TravelAgent , placeSequence, plan_name) VALUES (?,?,?,?,?,?)";
+$stmt = mysqli_prepare($conn, $query) or die(mysqli_error($conn));
+$stmt->bind_param("ssssss",$planID, $username , $tourGuideID ,$agent , $m , $nam);
+$add=$stmt->execute();
+$sql="INSERT INTO 'plan'('planId', 'touristId', 'tourGuideID', 'tour_TravelAgent', 'placeSequence', 'dateStarted', 'dateFinished', 'plan_name') 
+VALUES ('$planID','$username','$tourGuideID','$agent','$route[$small]','df','df','$nam')";
+//$add=mysqli_query($conn,$sq);
+if(!$add){
+	
+	echo("<br/>failed to add the plan <br/>".mysqli_error($conn));
+	
+	
+}
+else{
+	
+	echo("sucessfully  added the plan /n");
+	
+	
+	
+}
+
+	}
+
+
+?>
+<br/><br/><br/><br/><br/>
+</body>
+<footer>&copy;edenMelaku 2018
+</footer>
+</html>

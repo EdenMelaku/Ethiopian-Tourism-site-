@@ -1,0 +1,111 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website</title>
+     
+        
+
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+      <div id="groupNav">
+            <div class="contact">
+        
+                <p><i <p><i class="fa fa-envelope">  </i>  ethioTourism@gmail.com</p>
+                <p><i class="fa fa-mobile">  </i>  +251 115 56 7890</p>
+                <p id="icon"><a href="http://facebook.com/" target="_blank">
+				<i style="color:white;" class="fa fa-facebook"></i></a></p>
+                   
+                <p><a href="http://twitter.com/"  target="_blank">
+				<i style="color:white;" class="fa fa-twitter"></i></a></p>
+                
+                <p><a href="http://pinterest.com/"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            <p><a style="text-decoration:none;color:white" href="http://localhost/ethioTourism.com/log.html">
+			
+			<h3 > &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp LOGIN
+					
+	             
+			 </a>
+			 
+			 <a style="text-decoration:none;color:white" href="http://localhost/ethioTourism.com/ca.html">
+			
+			&nbsp&nbsp&nbsp&nbsp&nbsp SIGNUP</h3>
+					
+	             
+			 </a> </p> 
+			   
+			</div>
+			
+			
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="tourist.html"><i class="fa fa-list-ul"></i>destinations</a> </p>
+	   <p><a href="aboutus.html"><i class="fa fa-font  "></i>about ethiopia</a> </p>
+       <p><a href="agents.html"><i class="fa fa-asterisk "></i>agents</a> </p>
+	   
+       
+    </div>
+                    </div>
+					<p><a href="about.html"><i class="fa fa-group (alias) "></i>ABOUT US </a></p>
+					<p><a href="contact.html"><i class="fa fa-phone"></i>contact US </a></p>
+                    <p><a href="blogg.php" style="color:black;"><i class="fa fa-bullhorn"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		<br/><br/><br/><br/><br/>
+	<div class="form-style-10" style="float:left">
+		 <div class="inner-wrap">
+<h3> <label>
+email-------ethio tourism <br/>
+phone number-----+251 113 456 45 98<br/>
+physical address----mafi building : office number 5<br/>
+</label>
+</h3>
+	</div></div>
+	<div class="form-style-10" style="float:center">
+					
+    <h1>Contact us <span> you can leave any enquiry here </span></h1>
+	 <form>
+   
+    <div class="inner-wrap">
+        <label>name <input type="text" id="name" /><span style="color:red;" id="ns"></span></label>
+        
+        <label>email address <input type="email" id="email" /><span style="color:red;" id="es"></span></label>
+		<label>message<span style="color:red;" id="ms"></span><textarea id="mess"> </textarea></label>
+    </div>
+
+   
+ 
+    <div class="button-section">
+     <input type="button" value="Submit" onclick="sub()"/>
+     <br/>
+	 
+     </span>
+    </div>
+</form>
+</div>
+			  
+    </body>
+</html>

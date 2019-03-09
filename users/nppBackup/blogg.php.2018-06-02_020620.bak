@@ -1,0 +1,147 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website</title>
+     
+        <style type="text/css">
+		div{
+		 border: 2px solid #fff;
+		 background: #29293d;
+		 font-size:14px;
+		
+		}
+		</style>
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+             <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i><?php
+				//$name=$_POST["fname"]."  ".$_POST["lname"];
+				//print"'$name'";
+				print" will";
+				
+				
+				?></p>
+                <p><i class="fa fa-mobile">  <a href="logout.php" style="color:white;text_decoration:none">logout</a> </i> </p>
+                <p id="icon"><a href="http://facebook.com/" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>my planner</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">edit plan</a> </p>
+	   <p><a href="school.html#ele">make plan</a> </p>
+       <p><a href="school.html#hs">view plan</a> </p>
+       
+    </div>
+                    </div>
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">destinations</a> </p>
+	   <p><a href="school.html#ele">about ethiopia</a> </p>
+       <p><a href="school.html#hs">agents</a> </p>
+	   <p><a href="school.html#hs">gallery</a> </p>
+       
+    </div>
+                    </div>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>ABOUT US </a></p>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>contact US </a></p>
+                    <p><a href="blogg.html"><i class="fa fa-envelope"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		
+		<?php
+		
+//include 'run.php';
+$usern=$_POST["op1"];
+$pass=$_POST["op2"];
+$m=0;
+
+$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysql_error());
+}
+else{
+	mysqli_select_db($conn,'touristSite');
+	$ret="select * from blog ";
+$q=mysqli_query($conn,$ret);
+$m=0;
+while($row=mysqli_fetch_assoc($q)){
+	m++;
+}
+
+	if($m==0){
+		
+		echo"no blogs to display";
+	}
+	
+	
+	
+	else{
+	
+	for($row as $key=>$val){
+	
+	echo"
+	<div >
+	<p  > {$val['username'] }</p>
+	<h3  > {$val['message'] }</h3>
+	<br/>
+	<br/><br/><br/>
+	</div>
+	";
+	}
+	}
+	}
+		print("<form action=\"writeBlog.php?uname=$uname\" method=\"post\">
+		<textarea id=\"mess\"></textarea><br/>
+		<input type=\"submit\" value=\"blog\">
+		</form>");
+		
+		
+		
+		
+		
+		?>
+		
+		
+		
+		
+		
+		
+    </body>
+</html>

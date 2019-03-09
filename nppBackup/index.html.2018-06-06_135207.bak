@@ -1,0 +1,111 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>HOME</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+         <div id="groupNav">
+            <div class="contact">
+        
+                <p><i <p><i class="fa fa-envelope">  </i>  ethioTourism@gmail.com</p>
+                <p><i class="fa fa-mobile">  </i>  +251 115 56 7890</p>
+                <p id="icon"><a href="http://facebook.com/" target="_blank">
+				<i style="color:white;" class="fa fa-facebook"></i></a></p>
+                   
+                <p><a href="http://twitter.com/"  target="_blank">
+				<i style="color:white;" class="fa fa-twitter"></i></a></p>
+                
+                <p><a href="http://pinterest.com/"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            <p><a style="text-decoration:none;color:white" href="http://localhost/ethioTourism.com/log.html">
+			
+			<h3 > &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp LOGIN
+					
+	             
+			 </a>
+			 
+			 <a style="text-decoration:none;color:white" href="http://localhost/ethioTourism.com/ca.html">
+			
+			&nbsp&nbsp&nbsp&nbsp&nbsp SIGNUP</h3>
+					
+	             
+			 </a> </p> 
+			   
+			</div>
+			
+			
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="tourist.html"><i class="fa fa-list-ul"></i>destinations</a> </p>
+	   <p><a href="aboutus.html"><i class="fa fa-font  "></i>about ethiopia</a> </p>
+       <p><a href="agents.html"><i class="fa fa-asterisk "></i>agents</a> </p>
+	   
+       
+    </div>
+                    </div>
+					<p><a href="about.html"><i class="fa fa-group (alias) "></i>ABOUT US </a></p>
+					<p><a href="contact.html"><i class="fa fa-phone"></i>contact US </a></p>
+                    <p><a href="blogg.php" style="color:black;"><i class="fa fa-bullhorn"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		<br/>  
+    
+        <div id="container">
+            <h1>WELLCOME TO ETHIOPIAN TOURISM SITE</h1>
+           
+                  
+        </div>
+        			  
+		<iframe src="marq.html" width="20%" height="1000px"
+                  align ="left"
+                marginwidth="0" marginheight="10">
+				
+         </iframe>
+        
+     
+
+    
+          <iframe src="home.html" width="70%" height="1000px"
+                 align ="center"
+                marginwidth="10" marginheight="10"  >
+           </iframe>
+			  
+			  
+			  
+			  
+        
+    </body>
+	
+	
+	<footer>
+	<div class="contact">
+	<h3 style="color:white" align="center">
+	&copy;ETHIOPIAN TOURISM SITE 2018</h3>
+	</div>
+	</footer>
+</html>

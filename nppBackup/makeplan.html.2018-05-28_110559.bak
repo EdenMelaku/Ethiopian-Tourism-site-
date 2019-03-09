@@ -1,0 +1,202 @@
+<!Doctype html>
+<html>
+    <head>
+	<style>
+
+	
+	
+	
+	label[for=0] input[type="checkbox"]{
+    display: none;
+}
+label[for=0] input[type="checkbox"] {
+      background: url('image/bd/unchecked_checkbox.png') 0 0px no-repeat;
+  
+  content: "";
+  display: inline-block;
+  font-size: 12px;
+  height: 35px;
+  width: 35px;
+  line-height: 16px;
+  margin: -2px 6px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 10px;
+  background-color: #6283B2;
+   position: absolute;
+  z-index: 100;
+}
+
+label[for=0] input[type="checkbox"]:checked{
+  background: url('image/bd/checked_checkbox.png'), url('image/bd/unchecked_checkbox.png') 0 0px no-repeat;
+  height: 35px;
+  width: 35px;
+  border-radius: 10px;
+  background-color: #37924A;
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+label:before {
+  content: url("image/bd/unchecked_checkbox.png");
+  position: absolute;
+  z-index: 100;
+  
+  
+  content: "";
+  display: inline-block;
+  font-size: 12px;
+ 
+  line-height: 16px;
+  margin: -2px 6px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 10px;
+  
+   position: absolute;
+  z-index: 100;
+  
+  
+}
+input[type=checkbox]:before { content:""; display:inline-block; width:12px; height:12px; background:red; }
+input[type=checkbox]:checked:before { background:green; }​
+:checked+label:before {
+  content: url("image/bd/checked_checkbox.png");
+}
+input[type=checkbox] {
+  display: none;
+}
+/*pure cosmetics:*/
+img {
+  width: 300px;
+  height: 200px;
+}
+label {
+  margin: 10px;
+}
+	</style>
+	
+	<script type="text/javascript">
+	/*function do(){
+	
+	
+	if(f.bb.checked==true){
+	alert ("bahir dar");
+	}
+	else{
+	akert ("other");
+	}
+	
+	}
+	*/
+	function direct(){
+	bd=document.getElementById("0").checked;
+	alert(bd);
+	
+	
+	
+	}
+	</script>
+        <title>Website</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+		 <link rel="stylesheet" type="text/css" href="style/css/cb.css"/>
+    </head>
+    <body>
+        <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i>  @gmail.com</p>
+                <p><i class="fa fa-mobile">  </i>  +25</p>
+                <p id="icon"><a href="http://facebook.com/hena12" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/hena12" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 <p style="text-transform: uppercase">tourism.<span style="font-size: 20px">com</span></p>
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-mortar-board (alias)"></i>my planner</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">edit plan</a> </p>
+	   <p><a href="school.html#ele">make plan</a> </p>
+       <p><a href="school.html#hs">view plan</a> </p>
+       
+    </div>
+                    </div>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>Connector</a></p>
+                    <p><a href="blogg.html"><i class="fa fa-envelope"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		
+		<h1></h1>
+		<br/><br/><br/><br/><br/><br/>
+		 <div class="frm_checkbox" id="frm_checkbox_84-1">
+		<form action="makeplan.php" method="post" name ="f">
+
+		<input type="checkbox" id="0" name ="bb" />
+		<label for="0"><img src="image/bd/1.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="checkbox" id="1" style="display:none"/>
+		<label for="1"><img src="image/bd/2.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="checkbox" id="2" style="display:none"/>
+		<label for="2"><img src="image/bd/3.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="checkbox" id="3" style="display:none"/>
+		<label for="3"><img src="image/bd/4.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="checkbox" id="4"style="display:none"/>
+		<label for="4"><img src="image/bd/1.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		
+		<input type="checkbox" id="5" style="display:none"/>
+		<label for="5"><img src="image/bd/5.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="checkbox" id="6" style="display:none"/>
+		<label for="6"><img src="image/bd/6.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="checkbox" id="7"style="display:none"/>
+		<label for="7"><img src="image/bd/9.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		
+		<input type="checkbox" id="8" style="display:none"/>
+		<label for="8"><img src="image/bd/7.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="checkbox" id="9"style="display:none"/>
+		<label for="9"><img src="image/bd/8.jpg" width="300px" height="200px"></label>&nbsp&nbsp&nbsp&nbsp&nbsp
+		
+		<br/><br/><br/><br/><br/>
+		<input type="button" value="submit" onclick="direct()">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></form>
+		
+		
+		
+		
+    </body>
+</html>

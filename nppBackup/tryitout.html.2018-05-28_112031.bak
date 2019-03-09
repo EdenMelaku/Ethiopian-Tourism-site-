@@ -1,0 +1,20 @@
+<html>
+<head>
+<style type="text/css">
+
+
+
+</style>
+
+
+</head>
+<body>
+<div class="frm_opt_container">
+   
+    <div class="frm_checkbox" id="frm_checkbox_84-1">
+        <label for="field_2hn10m-1">
+            <input type="checkbox" name="item_meta[84][]" id="field_2hn10m-1" value="Option 2"/> <img src="image/bd/1.jpg" width="300px" height="200px"></label>
+    </div>
+</div>
+</body>
+</html>

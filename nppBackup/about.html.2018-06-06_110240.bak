@@ -1,0 +1,167 @@
+<!Doctype html>
+<html>
+    <head>
+       <style>
+            #site {
+                text-align: center;
+                float: right;
+            }
+			
+			#site p{
+
+    margin: 40px 180px;  
+    width: 70%;
+   padding: 20px 30px 15px 30px;
+    margin-top: 10px;
+	 margin-left: 90px;
+  }      
+        
+      
+			
+            #site1{
+                height: 20px;
+                width: 70px;
+                float: left;
+            }
+            #ff{
+              float: left ;
+              text-align: center;  
+            
+            }
+           
+        table {
+    border-collapse: collapse;
+    margin: 60px 180px;        
+    width: 70%;
+            height: 75%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2}
+
+th {
+    background-color: #29293d;
+    color: white;
+}
+  
+   
+        </style>
+        <title>Website</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+                     <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i><?php
+				//$name=$_POST["fname"]."  ".$_POST["lname"];
+				//print"'$name'";
+				print" will";
+				
+				
+				?></p>
+                <p><i class="fa fa-mobile">  <a href="logout.php" style="color:white;text_decoration:none">logout</a> </i> </p>
+                <p id="icon"><a href="http://facebook.com/" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="tourist.html"><i class="fa fa-list-ul"></i>destinations</a> </p>
+	   <p><a href="aboutus.html"><i class="fa fa-font  "></i>about ethiopia</a> </p>
+       <p><a href="agents.html"><i class="fa fa-asterisk "></i>agents</a> </p>
+	   
+       
+    </div>
+                    </div>
+					<p><a href="about.html"><i class="fa fa-group (alias) "></i>ABOUT US </a></p>
+					<p><a href="contact.html"><i class="fa fa-phone"></i>contact US </a></p>
+                    <p><a href="blogg.php" style="color:black;"><i class="fa fa-bullhorn"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		<br/>	<br/>	<br/>	<br/>	<br/>	<br/>
+		               <div id="site">
+            <h1 class="site2" >ABOUT SITE</h1>
+                <P>This site can play a major role in attracting tourists in many countries who live in a very
+digitalized world. There are many stakeholders in our country regarding with tourism for
+example hotels, tour and travel agents, tour guides, airlines etc…. can benefit a lot from this by
+advertising their service and attracting customers.</P>
+            </div>
+			<br/><br/><br/><br/><br/><br/><br/>
+            <div>
+                  <table>
+<tr><th colspan="4" style="text-align: center;tab-size: 40px">DEVELOPERS</th></tr>                      
+  <tr>
+      
+    <th>NAME</th>
+    <th>DEPARTMENT</th>
+    <th>ID NO</th>
+      <th>IMAGE</th>
+  </tr>
+  <tr>
+    <td>HENOK SHIMELES</td>
+    <td>SOFTWARE ENGIINERING</td>
+    <td>0801683</td>
+      <td><img src="image/1.jpg" height="80px" width="100px"></td>
+  </tr>
+  <tr>
+    <td>EDEN MELAKU</td>
+    <td>SOFTWARE ENGINERING</td>
+    <td>0800668</td>
+    <td><img src="image/2.jpg" height="80px" width="100px"></td>  
+  </tr>
+  <tr>
+    <td>MERAWI AREGAWI</td>
+    <td>SOFTWARE ENGIINERING</td>
+    <td>0801724</td>
+      <td><img src="image/4.jpg" height="80px" width="100px"></td>
+  </tr>
+  <tr>
+    <td>ZELALEM ABEBAW</td>
+    <td>SOFTWARE ENGIINERING</td>
+    <td>0801866</td>
+      <td><img src="image/2.gif" height="80px" width="100px"></td>
+</tr>
+                      <tr>
+    <td>MIKYAS YEHUALA</td>
+    <td>SOFTWARE ENGIINERING</td>
+    <td>0801732</td>
+      <td><img src="image/1.jpg" height="80px" width="100px"></td>
+  </tr>
+</table>
+            </div>
+        </div>
+    </body>
+</html>

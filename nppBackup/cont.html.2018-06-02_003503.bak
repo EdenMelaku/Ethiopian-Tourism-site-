@@ -1,0 +1,65 @@
+<html>	
+<head>
+<link rel="stylesheet" type="text/css" href="style/css/formStyle.css"/>
+<script type="text/javascript">
+function sub(){
+var validEmail = /^[\w]+(\.[\w]+)*@([\w]+\.)+[a-z]{2,7}$/i;
+na=document.getElementById('name').value;
+em=document.getElementById('email').value;
+message=document.getElementById('mess').value;
+if(na==""){
+document.getElementById("ns").innerHTML="please enter your name";
+}
+if(em==""){
+document.getElementById("es").innerHTML="please enter your email";
+}
+if(message==""){
+document.getElementById("ms").innerHTML="please enter your message";
+}
+var searchTerm = /^[a-zA-Z']+$/;
+//var searchTerm = new RegExp( '[a-z][A-Z]', 'g' );
+if(!na.match(searchTerm)){
+document.getElementById("ns").innerHTML="invalid  name. please enter only characters";
+}
+if(!em.match(validEmail)){
+document.getElementById("es").innerHTML="invalid  email";
+}
+else{
+alert("congratulations  "+na+"   you have sucessfuly send your enquiry   ");
+}
+
+}
+</script>
+</head>			
+<body>	
+<h3> 
+email-------
+phone number-----
+physical address----
+or you can leave any enquiry here 
+</h3>
+	
+	<div class="form-style-10">
+					
+    <h1>Contact us <span> please fill all the fields </span></h1>
+	 <form>
+   
+    <div class="inner-wrap">
+        <label>name <input type="text" id="name" /><span style="color:red;" id="ns"></span></label>
+        
+        <label>email address <input type="email" id="email" /><span style="color:red;" id="es"></span></label>
+		<label>message<textarea id="mess"> </textarea><span style="color:red;" id="ms"></span></label>
+    </div>
+
+   
+ 
+    <div class="button-section">
+     <input type="button" value="Sign Up" onclick="sub()"/>
+     <br/>
+	 
+     </span>
+    </div>
+</form>
+</div>
+</body>
+</html>

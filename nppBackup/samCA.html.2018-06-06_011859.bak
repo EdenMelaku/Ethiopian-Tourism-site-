@@ -1,0 +1,192 @@
+<html>	
+<head>
+<link rel="stylesheet" type="text/css" href="style/css/formStyle.css"/>
+<script type="text/javascript">
+function sub(){
+document.getElementById("ns").innerHTML="";
+document.getElementById("ms").innerHTML="";
+document.getElementById("es").innerHTML="";
+var validEmail = /^[\w]+(\.[\w]+)*@([\w]+\.)+[a-z]{2,7}$/i;
+na=document.getElementById('name').value;
+em=document.getElementById('email').value;
+message=document.getElementById('mess').value;
+if(na==""){
+document.getElementById("ns").innerHTML = "please enter your name";
+}
+if(em==""){
+document.getElementById("es").innerHTML="please enter your email";
+}
+if(message.length==0){
+document.getElementById("ms").innerHTML="please enter your message";
+}
+var searchTerm = /^[a-zA-Z']+$/;
+//var searchTerm = new RegExp( '[a-z][A-Z]', 'g' );
+if(!na.match(searchTerm)){
+document.getElementById("ns").innerHTML="invalid  name. please enter only characters";
+}
+if(!em.match(validEmail)){
+document.getElementById("es").innerHTML="invalid  email format write it like example@example.com";
+}
+if(message==""){
+document.getElementById("ms").innerHTML="message is empty";
+
+}
+else{
+alert("congratulations  "+na+"   you have sucessfuly send your enquiry   ");
+}
+
+}
+
+
+
+function direc(){
+alert("js");
+fna=document.getElementById("fname").value;
+lna=document.getElementById('lname').value;
+
+document.getElementById("es").innerHTML="";
+document.getElementById("na").innerHTML="";
+document.getElementById("nb").innerHTML="";
+document.getElementById("nc").innerHTML="";
+document.getElementById("nd").innerHTML="";
+document.getElementById("ne").innerHTML="";
+document.getElementById("nf").innerHTML="";
+document.getElementById("ng").innerHTML="";
+var validEmail = /^[\w]+(\.[\w]+)*@([\w]+\.)+[a-z]{2,7}$/i;
+
+
+cou=document.getElementById('country').value;
+email=document.getElementById('email').value;
+un=document.getElementById('username').value;
+pass=document.getElementById('pass').value;
+pass2=document.getElementById('pass2').value;
+pol=document.getElementById('pol').value;
+
+
+document.getElementById("ns").innerHTML="invalid  name. please enter only characters";
+var validEmail = /^[\w]+(\.[\w]+)*@([\w]+\.)+[a-z]{2,7}$/i;
+
+
+err=0;
+
+var searchTerm = /^[a-zA-Z']+$/;
+
+if(fna==""||!fna.match(searchTerm)){
+err++;
+if(fna==""){
+err++;
+document.getElementById("n1").innerHTML = "please enter your first name";
+}
+else{
+document.getElementById("n1").innerHTML = "please enter only characters";
+}
+}
+
+
+
+if(lna==""||!lna.match(searchTerm)){
+err++;
+if(lna==""){
+err++;
+document.getElementById("n2").innerHTML = "please enter your last name";
+}
+else{
+document.getElementById("n2").innerHTML = "please enter only characters";}
+}
+
+
+if(cou==""||!cou.match(searchTerm)){
+err++;
+if(cou==""){
+err++;
+document.getElementById("n3").innerHTML = "please enter your country";
+}
+else{
+document.getElementById("n3").innerHTML = "please enter only characters";}
+}
+
+if(email==""||!email.match(validEmail)){
+err++;
+if(email==""){
+err++;
+document.getElementById("n4").innerHTML = "please enter your email";
+}
+else{
+document.getElementById("n4").innerHTML = "please enter only characters";}
+}
+
+var search = /^[a-zA-Z'_]+$/;
+if(un==""||!un.match(search)){
+err++;
+if(un==""){
+err++;
+document.getElementById("n5").innerHTML = "please enter your username";
+}
+else{
+document.getElementById("n5").innerHTML = "please enter only characters and underscore( _ ) only ";}
+}
+
+
+
+
+
+
+if(pass==""||pass2==""){
+err++;
+if(pass==""){
+
+document.getElementById("n6").innerHTML="please enter your password";
+}
+if(pass2==""){
+
+document.getElementById("n6").innerHTML="please confirm your password";
+}
+}
+
+if(err==0){
+if(pol=="1"){
+alert("congratulations  "+fna+" "+lna+"   you have sucessfuly send your enquiry   ");
+}
+else{
+document.getElementById("n7").innerHTML="please check ";
+}
+
+}
+
+
+}
+
+</script>
+</head>			
+<body>	
+<h3> 
+email-------
+phone number-----
+physical address----
+or you can leave any enquiry here 
+</h3>
+	
+	<div class="form-style-10">
+					
+    <h1>Contact us <span> please fill all the fields </span></h1>
+	 <form>
+   
+    <div class="inner-wrap">
+        <label>name <input type="text" id="name" /><span style="color:red;" id="ns"></span></label>
+        
+        <label>email address <input type="email" id="email" /><span style="color:red;" id="es"></span></label>
+		<label>message<span style="color:red;" id="ms"></span><textarea id="mess"> </textarea></label>
+    </div>
+
+   
+ 
+    <div class="button-section">
+     <input type="button" value="Sign Up" onclick="sub()"/>
+     <br/>
+	 
+     </span>
+    </div>
+</form>
+</div>
+</body>
+</html>

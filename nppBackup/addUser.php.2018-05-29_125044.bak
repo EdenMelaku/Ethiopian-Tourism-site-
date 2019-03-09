@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html>
+<head>
+
+<title>SWE-HOME PAGE</title>
+</head>
+<body>
+<?php
+//include 'run.php';
+$usern=$_POST["un"];
+$pass=$_POST["pass"];
+$fname=$_POST["fname"];
+$lname=$_POST["lname"];
+$country=$_POST["country"];
+
+$m=0;
+
+$conn=mysqli_connect('localhost','root','');
+if(!$conn){
+	
+	die(" connection failed ".mysqli_error());
+}
+else{
+	mysqli_select_db($conn,'touristSite');
+	$ret="insert into users values ('$fname','$lname','$usern','$pass','$country','1')";
+$q=mysqli_query($conn,$ret);
+if(!$q){
+		die(" fail to insert data  ".mysqli_error());
+	
+}
+	else{
+		echo"data inserted";
+		
+		
+	}
+	
+
+?>
+</body>
+<footer>&copy;edenMelaku 2018
+</footer>
+</html>

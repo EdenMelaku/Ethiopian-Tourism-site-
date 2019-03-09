@@ -1,0 +1,61 @@
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="style/css/formStyle.css"/>
+<script type="text/javascript">
+function direct(){
+
+var myWindow = window.open("createAccount.html", "_self");
+}
+
+
+</script>
+
+
+</head>
+<body>
+      
+			  
+			  
+			  
+			  
+<div class="form-style-10">
+<h1>LOGIN</h1>
+<form method="POST" action="login.php">
+    
+    <div class="inner-wrap">
+        <label>username <input type="text" name="op1" /></label>
+		<label>Password <input type="password" name="op2" /></label>
+        
+    </div>
+
+    <div class="button-section">
+     <input type="submit" name="login" /> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 <input type="button" value="Create account" onclick="direct()">
+     
+     </span>
+    </div>
+</form>
+</div>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+	</body>
+</html>	
+			  

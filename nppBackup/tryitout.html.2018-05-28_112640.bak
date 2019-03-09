@@ -1,0 +1,98 @@
+<html>
+<head>
+<style type="text/css">
+.hide {
+   display: none;
+}
+img{
+width:200px;
+height:150px;
+
+}
+
+</style>
+
+<script type="text/javascript">
+function getCheckedElements() {
+   var imgArray = document.getElementsByName('checkboximg');
+   checkedItems.length = 0;
+ 
+   for(var i = 0; i < imgArray.length; i++) {
+      var tmp = imgArray[i].src.toString();
+      if(tmp.indexOf(imgDown) != -1) {
+         checkedItems.push(imgArray[i].id.toString());
+      }
+   }
+ 
+   var theBoxes = document.getElementsByName('cblist[]');
+   for(var i = 0; i < theBoxes.length; i++) {
+      theBoxes[i].checked = false;
+      for(var x = 0; x < checkedItems.length; x++) {
+         if(theBoxes[i].value == checkedItems[x]) {
+            theBoxes[i].checked = true;
+            break;
+         }
+      }
+   }
+}
+
+</script>
+</head>
+<body>
+<input class="hide" name="cblist[]" type="checkbox" value="item1" />
+<input class="hide" name="cblist[]" type="checkbox" value="item2" />
+<input class="hide" name="cblist[]" type="checkbox" value="item3" />
+<input class="hide" name="cblist[]" type="checkbox" value="item4" />
+<input class="hide" name="cblist[]" type="checkbox" value="item5" />
+<input class="hide" name="cblist[]" type="checkbox" value="item6" />
+
+
+<form id="frmMain" method="post" action="echo.php">
+   <table lang="theForm" cellspacing="0">
+      <tr>
+         <td><img src="image/1.jpg" id="item1" name="checkboximg" alt="" onclick="swapImage('item1')" /></td>
+         <td onclick="swapImage('item1')">This is item 1. If you click on the icon to the left, or this text, it will change.</td>
+      </tr>
+      <tr>
+         <td><img src="image/1.jpg" id="item2" name="checkboximg" alt="" onclick="swapImage('item2')" /></td>
+ 
+         <td onclick="swapImage('item2')">This is item 2. If you click on the icon to the left, or this text, it will change.</td>
+      </tr>
+      <tr>
+         <td><img src="image/1.jpg" id="item3" name="checkboximg" alt="" onclick="swapImage('item3')" /></td>
+         <td onclick="swapImage('item3')">This is item 3. If you click on the icon to the left, or this text, it will change.</td>
+      </tr>
+      <tr>
+         <td><img src="image/1.jpg" id="item4" name="checkboximg" alt="" onclick="swapImage('item4')" /></td>
+ 
+         <td onclick="swapImage('item4')">This is item 4. If you click on the icon to the left, or this text, it will change.</td>
+      </tr>
+      <tr>
+         <td><img src="image/1.jpg" id="item5" name="checkboximg" alt="" onclick="swapImage('item5')" /></td>
+         <td onclick="swapImage('item5')">This is item 5. If you click on the icon to the left, or this text, it will change.</td>
+      </tr>
+      <tr>
+         <td><img src="image/1.jpg" id="item6" name="checkboximg" alt="" onclick="swapImage('item6')" /></td>
+ 
+         <td onclick="swapImage('item6')">This is item 6. If you click on the icon to the left, or this text, it will change.</td>
+      </tr>
+   </table>
+   <input name="cblist[]" type="checkbox" value="item1" class="hide" />
+   <input name="cblist[]" type="checkbox" value="item2" class="hide" />
+   <input name="cblist[]" type="checkbox" value="item3" class="hide" />
+   <input name="cblist[]" type="checkbox" value="item4" class="hide" />
+   <input name="cblist[]" type="checkbox" value="item5" class="hide" />
+ 
+   <input name="cblist[]" type="checkbox" value="item6" class="hide" />
+   <p>Click the submit button to pass the checked items to a PHP page via standard HTML: <input name="submit" type="submit" value="Submit" /></p>
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>

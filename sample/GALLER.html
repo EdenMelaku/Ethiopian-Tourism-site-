@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Website</title>
+     <style>
+         #image{
+             margin: 40px 100px 100px 160px;
+         }
+         .im{
+             opacity: 1;
+             cursor: pointer;
+         }
+         .im:hover{
+             opacity: 0.8;
+             transform: scale(1.1);
+             transition: 0.s;
+         }
+         #photo{
+             margin: 0px 0px 0px 200px;
+             width: 600px;
+             height: 500px;
+         }
+         
+        </style>
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+        <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i>  @gmail.com</p>
+                <p><i class="fa fa-mobile">  </i>  +25</p>
+                <p id="icon"><a href="http://facebook.com/hena12" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/hena12" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 <p style="text-transform: uppercase">tourism.<span style="font-size: 20px">com</span></p>
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <p><a href="about.html"><i class="fa fa-book"></i>About us</a></p>
+                    <p><a href="tourist.html"><i class="fa fa-mortar-board (alias)"></i>Tourist sites</a></p>
+            
+                    <p><a href="contact.html"><i class="fa fa-envelope"></i>Contact Us</a></p>
+               
+             </div>
+            </div>
+            <div id="image">
+            <img class="im" src="image/1%20(2).jpg" width="600" height="250">
+                 <img class="im" src="image/1.jpg" width="300" height="250"><br>
+                 <img class="im" src="image/2.gif" width="300" height="250">
+                 <img class="im" src="image/2.jpg" width="300" height="250">
+                 <img class="im" src="image/3.jpg" width="300" height="250">
+               
+            
+            
+            </div>
+            <div id="slider">
+                  <h1 class="slid">slide</h1>
+              <img id="photo" src="image/1%20(2).jpg" name="hena">
+				<script type="text/javascript">
+					var i = 0;
+						var images = [];
+						
+						images[0] = 'image/1%20(2).jpg'
+						images[1] = 'image/3.jpg';
+						images[2] = 'image/5.jpg';
+						images[3] = 'image/4.jpg';
+						images[4] = 'image/2.jpg';
+						
+						function slide(){
+							document.hena.src = images[i];
+							
+							if(i < images.length-1)
+								i++;
+							else
+								i=0;
+								setTimeout("slide()",2000);
+						}
+					window.onload = slide;
+				</script>
+            
+            
+            
+            </div>
+        </div>
+    </body>
+</html>

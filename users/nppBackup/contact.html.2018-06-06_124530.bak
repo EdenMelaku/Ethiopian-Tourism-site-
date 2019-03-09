@@ -1,0 +1,147 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>CONTACT US </title>
+     <script type="text/javascript">
+function sub(){
+document.getElementById("ns").innerHTML="";
+document.getElementById("ms").innerHTML="";
+document.getElementById("es").innerHTML="";
+var validEmail = /^[\w]+(\.[\w]+)*@([\w]+\.)+[a-z]{2,7}$/i;
+na=document.getElementById('name').value;
+em=document.getElementById('email').value;
+message=document.getElementById('mess').value;
+if(na==""){
+document.getElementById("ns").innerHTML = "please enter your name";
+}
+if(em==""){
+document.getElementById("es").innerHTML="please enter your email";
+}
+if(message.length==0){
+document.getElementById("ms").innerHTML="please enter your message";
+}
+var searchTerm = /^[a-zA-Z']+$/;
+//var searchTerm = new RegExp( '[a-z][A-Z]', 'g' );
+if(!na.match(searchTerm)){
+document.getElementById("ns").innerHTML="invalid  name. please enter only characters";
+}
+if(!em.match(validEmail)){
+document.getElementById("es").innerHTML="invalid  email format write it like example@example.com";
+}
+if(message==""){
+document.getElementById("ms").innerHTML="message is empty";
+
+}
+else{
+alert("congratulations  "+na+"   you have sucessfuly send your enquiry   ");
+}
+
+}
+</script>
+        <link rel="stylesheet" type="text/css" href="style/css/formStyle.css"/>
+
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+            <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i><?php
+				//$name=$_POST["fname"]."  ".$_POST["lname"];
+				//print"'$name'";
+				print" will";
+				
+				
+				?></p>
+                <p><i class="fa fa-mobile">  <a href="logout.php" style="color:white;text_decoration:none">logout</a> </i> </p>
+                <p id="icon"><a href="http://facebook.com/" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>my planner</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">edit plan</a> </p>
+	   <p><a href="school.html#ele">make plan</a> </p>
+       <p><a href="school.html#hs">view plan</a> </p>
+       
+    </div>
+                    </div>
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">destinations</a> </p>
+	   <p><a href="school.html#ele">about ethiopia</a> </p>
+       <p><a href="school.html#hs">agents</a> </p>
+	   <p><a href="school.html#hs">gallery</a> </p>
+       
+    </div>
+                    </div>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>ABOUT US </a></p>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>contact US </a></p>
+                    <p><a href="blogg.html"><i class="fa fa-envelope"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		<br/><br/><br/><br/><br/><div class="form-style-10" style="float:left">
+		 <div class="inner-wrap">
+<h3> <label>
+email-------ethio tourism <br/>
+phone number-----+251 113 456 45 98<br/>
+physical address----mafi building : office number 5<br/>
+</label>
+</h3>
+	</div></div>
+	<div class="form-style-10" style="float:center">
+					
+    <h1>Contact us <span> you can leave any enquiry here </span></h1>
+	 <form>
+   
+    <div class="inner-wrap">
+        <label>name <input type="text" id="name" /><span style="color:red;" id="ns"></span></label>
+        
+        <label>email address <input type="email" id="email" /><span style="color:red;" id="es"></span></label>
+		<label>message<span style="color:red;" id="ms"></span><textarea id="mess"> </textarea></label>
+    </div>
+
+   
+ 
+    <div class="button-section">
+     <input type="button" value="Submit" onclick="sub()"/>
+     <br/>
+	 
+     </span>
+    </div>
+</form>
+</div>
+    </body>
+</html>

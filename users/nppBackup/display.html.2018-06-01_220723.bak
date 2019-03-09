@@ -1,0 +1,33 @@
+<html>
+<head>
+
+</head>
+             <body>
+			 
+			 
+			 
+   
+			
+                <a href="bd.html" target="ifr"> 
+ <img src="image/bd/1.jpg" alt="bahir dar" width="150px" height="100px" /><br/>BAHIR DAR </a><br/><br/>
+				<a href="axum.html " target="ifr"> AXUM </a><br/>
+				<a href="hawassa.html"  target="ifr">  HAWASSA</a><br/>
+				<a href="#" target="ifr"> HARAR</a><br/>
+
+				 <a href="bd.html" target="ifr">  BAHIR DAR </a><br/>
+				<a href="axum.html " target="ifr"> AXUM </a><br/>
+				<a href="hawassa.html" target="ifr">  HAWASSA</a><br/>
+				<a href=" #" target="ifr">HARAR</a><br/>
+
+				 <a href="bd.html" target="ifr">  BAHIR DAR </a><br/>
+				<a href="axum.html " target="ifr"> AXUM </a><br/>
+				<a href="hawassa.html"target="ifr" >  HAWASSA</a><br/>
+				<a href=" #"target="ifr" >HARAR</a>
+
+
+
+    
+          
+
+             </body>
+</html>

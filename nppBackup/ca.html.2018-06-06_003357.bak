@@ -1,0 +1,240 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function direc(){
+alert("js");
+
+}
+
+function sub(){
+
+document.getElementById("n1").innerHTML="";
+document.getElementById("n2").innerHTML="";
+document.getElementById("n3").innerHTML="";
+document.getElementById("n4").innerHTML="";
+document.getElementById("n5").innerHTML="";
+document.getElementById("n6").innerHTML="";
+document.getElementById("n7").innerHTML="";
+var validEmail = /^[\w]+(\.[\w]+)*@([\w]+\.)+[a-z]{2,7}$/i;
+
+fna=document.getElementById('fname').value;
+lna=document.getElementById('lname').value;
+cou=document.getElementById('country').value;
+email=document.getElementById('email').value;
+un=document.getElementById('username').value;
+pass=document.getElementById('pass').value;
+pass2=document.getElementById('pass2').value;
+pol=document.getElementById('pol').value;
+alert(fna+"  "+lna);
+
+var validEmail = /^[\w]+(\.[\w]+)*@([\w]+\.)+[a-z]{2,7}$/i;
+
+
+err=0;
+
+var searchTerm = /^[a-zA-Z']+$/;
+//var searchTerm = new RegExp( '[a-z][A-Z]', 'g' );
+if(!na.match(searchTerm)){
+document.getElementById("ns").innerHTML="invalid  name. please enter only characters";
+}
+
+if(fna==""||!fna.match(searchTerm)){
+err++;
+if(fna==""){
+err++;
+document.getElementById("n1").innerHTML = "please enter your first name";
+}
+else{
+document.getElementById("n1").innerHTML = "please enter only characters";
+}
+}
+
+
+
+if(lna==""||!lna.match(searchTerm)){
+err++;
+if(lna==""){
+err++;
+document.getElementById("n2").innerHTML = "please enter your last name";
+}
+else{
+document.getElementById("n2").innerHTML = "please enter only characters";}
+}
+
+
+if(cou==""||!cou.match(searchTerm)){
+err++;
+if(cou==""){
+err++;
+document.getElementById("n3").innerHTML = "please enter your country";
+}
+else{
+document.getElementById("n3").innerHTML = "please enter only characters";}
+}
+
+if(email==""||!email.match(validEmail)){
+err++;
+if(email==""){
+err++;
+document.getElementById("n4").innerHTML = "please enter your email";
+}
+else{
+document.getElementById("n4").innerHTML = "please enter only characters";}
+}
+
+var search = /^[a-zA-Z'_]+$/;
+if(un==""||!un.match(search)){
+err++;
+if(un==""){
+err++;
+document.getElementById("n5").innerHTML = "please enter your username";
+}
+else{
+document.getElementById("n5").innerHTML = "please enter only characters and underscore( _ ) only ";}
+}
+
+
+
+
+
+
+if(pass==""||pass2==""){
+err++;
+if(pass==""){
+
+document.getElementById("n6").innerHTML="please enter your password";
+}
+if(pass2==""){
+
+document.getElementById("n6").innerHTML="please confirm your password";
+}
+}
+
+if(err==0){
+if(pol=="1"){
+alert("congratulations  "+fna+" "+lna+"   you have sucessfuly send your enquiry   ");
+}
+else{
+document.getElementById("n7").innerHTML="please check ";
+}
+
+}
+
+
+
+
+
+
+
+
+}
+</script>
+<head> 
+
+<link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+
+
+ 
+        <title>Website</title>
+     
+        
+       
+       
+</head>
+    <body>
+        <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i>  @gmail.com</p>
+                <p><i class="fa fa-phone">  </i>  +25</p>
+                <p id="icon"><a href="http://facebook.com/hena12" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/hena12" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+             
+			   <p><a style="text-decoration:none;color:white" href="http://localhost/ethioTourist.com/log.html">
+			
+			<h3 > &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp LOGIN
+					
+	             
+			 </a>
+			 
+			 <a style="text-decoration:none;color:white" href="http://localhost/ethioTourist.com/createAccount.html">
+			
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp SIGNUP</h3>
+					
+	             
+			 </a> </p> 
+			   
+			</div>
+			
+			
+         <div id="navigation">
+                 <p  class="na"style="text-transform: uppercase">tourism.<span style="font-size: 20px">com</span></p>
+                <div id="navs">
+                    <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                    <p><a href="about.html"><i class="fa fa-book"></i>About us</a></p>
+                    <p><a href="tourist.html"><i class="fa  fa-tumblr"></i>Tourist sites</a></p>
+                    <p><a href="contact.html"><i class="fa fa-envelope"></i>Destination</a></p>
+               
+             </div>
+         
+             </div>
+                
+               
+    </div>
+   
+			  
+			  
+		<br/><br/><br/><br/><br/><br/>	  
+			  
+<body>
+			  
+			  <div class="form-style-10">
+<h1>Sign Up Now!<span> and join this great community </span></h1>
+<form method="post" action="adduser.php">
+    <div class="section"><span>1</span>personal information</div>
+    <div class="inner-wrap">
+        <label>first name <input type="text" name="fname" id="fname"/><span style="color:red;" id="n1"></span></label>
+        <label>last name  <input type="text" name="lname" id="lname"/><span style="color:red;" id="n2"></span></label>
+		<label>country <input type="text" name="country" id="country" /><span style="color:red;" id="n3"></span></label>
+        <label>email address <input type="email" name="email" id="email" /><span style="color:red;" id="n4"></span></label>
+    </div>
+
+    <div class="section"><span>2</span>account information</div>
+    <div class="inner-wrap">
+        
+        <label>username <input type="text" name="username" id="username" /></label><span style="color:red;" id="n5"></span>
+		<label>Password <input type="password" name="pass" id="pass" /><span style="color:red;" id="n6"></span></label>
+        <label>Confirm Password <input type="password" name="pass2" id="pass2" /></label>
+    </div>
+
+ 
+    <div class="button-section">
+   
+     <span class="privacy-policy">
+	 <span style="color:red;" id="n7"></span></br>
+     <input type="checkbox" name="policy" id ="pol" value="1">You agree to our Terms and Policy.<br/> </span>
+	  <input type="button" value="validate" onclick="sub();" >  
+	  <input type="submit" name="Sign Up" />
+	 
+	 
+    
+    </div>
+</form>
+</div>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+	</body>
+</html>	
+			  

@@ -1,0 +1,77 @@
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="style/css/formStyle.css"/>
+<script type="text/javascript">
+function direct(){
+
+var myWindow = window.open("createAccount.html", "_self");
+}
+
+function dd(){
+
+varm=documet.getElementById('m');
+varm.classList.add("cc")
+}
+
+
+</script>
+
+<style type="text/css">
+.cc{
+color: red;
+opacity:34;
+font-size:45px;
+}
+.c{
+font-size:5px;
+}
+</style>
+</head>
+<body>
+      
+			  
+			  
+			  
+			  
+<div class="form-style-10">
+<h1>LOGIN</h1>
+<form method="post" action="login.php">
+    
+    <div class="inner-wrap">
+        <label>username <input type="text" name="op1"  id="op1"/></label>
+		<label>Password <input type="password" name="op2" id="op2"/></label>
+        
+    </div>
+
+    <div class="button-section"><input type="button" onclick="dd()" value="validate" /> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input type="checkbox" name="field7">login as tour and travel agent.<br/>
+	 <input type="submit" name="login" id="m" class="c"/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	 <input type="button" value="Create account" onclick="direct()">
+     
+     </span>
+    </div>
+</form>
+</div>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+	</body>
+</html>	
+			  

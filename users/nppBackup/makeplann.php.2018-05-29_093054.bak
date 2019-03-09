@@ -1,0 +1,227 @@
+<!Doctype html>
+<html>
+    <head>
+	<style>
+
+
+	</style>
+	
+	<script type="text/javascript">
+	/*function do(){
+	
+	
+	if(f.bb.checked==true){
+	alert ("bahir dar");
+	}
+	else{
+	akert ("other");
+	}
+	
+	}	
+	function change(v){
+	bd=document.getElementById("0").checked;
+	alert(bd);
+	
+	
+	
+	}
+	*/
+	var val="";
+
+	function direct() {
+bd0=document.getElementById("0").checked;
+bd1=document.getElementById("1").checked;
+bd2=document.getElementById("2").checked;
+bd3=document.getElementById("3").checked;
+bd4=document.getElementById("4").checked;
+bd5=document.getElementById("5").checked;
+bd6=document.getElementById("6").checked;
+bd7=document.getElementById("7").checked;
+bd8=document.getElementById("8").checked;
+bd9=document.getElementById("9").checked;
+
+if(bd0==true){
+val=val+'0';
+}
+if(bd1==true){
+val=val+'1';
+}
+if(bd2==true){
+val=val+'2';
+}
+if(bd3==true){
+val=val+'3';
+}
+if(bd4==true){
+val=val+'4';
+}
+if(bd5==true){
+val=val+'5';
+}
+if(bd6==true){
+val=val+'6';
+}
+
+if(bd7==true){
+val=val+'7';
+}
+if(bd8==true){
+val=val+'8';
+}
+if(bd9==true){
+val=val+'9';
+}
+else{
+
+}
+alert(val);
+dovument.getElementById("")
+}
+	</script>
+        <title>Website</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+		
+    </head>
+    <body>
+        <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i><?php
+				//$name=$_POST["fname"]."  ".$_POST["lname"];
+				//print"'$name'";
+				print" will work soon ";
+				
+				
+				?></p>
+                <p><i class="fa fa-mobile">  </i>  <form action="logout.php" method="post"><input type="submit" value="LOGOUT"> </form></p>
+                <p id="icon"><a href="http://facebook.com/hena12" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/hena12" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/hena12"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>my planner</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">edit plan</a> </p>
+	   <p><a href="school.html#ele">make plan</a> </p>
+       <p><a href="school.html#hs">view plan</a> </p>
+       
+    </div>
+                    </div>
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">destinations</a> </p>
+	   <p><a href="school.html#ele">about ethiopia</a> </p>
+       <p><a href="school.html#hs">agents</a> </p>
+	   <p><a href="school.html#hs">gallery</a> </p>
+       
+    </div>
+                    </div>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>ABOUT US </a></p>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>contact US </a></p>
+                    <p><a href="blogg.html"><i class="fa fa-envelope"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+		
+		<h1></h1>
+		<br/><br/><br/><br/><br/><br/>
+		<form action="makeplan.php" method="post" name ="f">
+		<br/><br/><br/>
+		GIVA A NAME TO YOUR TRIP:<input type="text" id="name"/>
+		<br/>
+		CHOOSE PLACES TO VISIT<br/><br/><br/> 
+<div>
+		<input type="checkbox" id="0" onclick="direct()" /> BAHIR DAR<br/>
+		<input type="checkbox" id="1" onclick="direct()"/> AXUM<br/>
+		<input type="checkbox" id="2" onclick="direct()"/> HAWASSA<br/>
+		<input type="checkbox" id="3" onclick="direct()"/> HARAR<br/>
+		<input type="checkbox" id="4" onclick="direct()"/> GONDER<br/>
+		
+		<input type="checkbox" id="5" onclick="direct()"/>ADDIS ABABA<br/>
+		<input type="checkbox" id="6" onclick="direct()"/>JIMMA<br/>
+		<input type="checkbox" id="7" onclick="direct()"/>DEBRE ZEIT<br/>
+		
+		<input type="checkbox" id="8" onclick="direct()"/>ARBAMINCH<br/>
+		<input type="checkbox" id="9"onclick="direct()"/>LALIBELA<br/>
+</div>	<br/><br/>
+<div>
+     CHOOSE DATE OF YOUR VISIT<br/> 
+	 <input type="date" ><br/>
+</div>	
+<br/>
+what is the purpuse of your visit? <select id="purpose">
+
+<option value="fam">family/ friends trip<option>
+<option value="work">work trip<option>
+<option value="res">research trip<option>
+<option value="oth">other<option>
+
+
+
+
+</select>
+<br/>
+<div>
+CHOSSE A TOUR AND TRAVEL AGENT<br/> <input type="radio" id="0" value ="ru" /> RUHAMMA<br/>
+		<input type="radio" id="agent" value="ab" /> ABYSINYA<br/>
+		<input type="radio" id="agent" value="lu"/> LUCY<br/>
+		<input type="radio" id="agent" value="et"/> ETHIO<br/>
+		<input type="radio" id="agent" value="ax"/>  SELAM<br/><br/><br/>
+		<input type="hidden" id="ch">
+
+</div>
+<div>
+
+
+</div>
+		<br/><br/><br/><br/><br/>
+		<input type="button" value="submit" onclick="direct()">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></form>
+		YOUR PLAN HAS BEEN SUCESSFULLY ADDED WITH THE FOLLOWING EVENTS <br/>
+		plan name.......<br/>
+		plan id.............<br/>
+		creator............<br/>
+		creatoin date--------<br/>
+		plan started ---------<br/>
+		
+	places that are going to be visited are <br/>
+	..........
+	tour and travel agent------------<br/>
+	tour guide-----------<br/>
+	
+		
+		
+    </body>
+</html>

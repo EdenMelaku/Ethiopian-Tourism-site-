@@ -1,0 +1,6 @@
+<input lang="hide" name="cblist[]" type="checkbox" value="item1" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item2" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item3" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item4" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item5" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item6" />

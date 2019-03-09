@@ -1,0 +1,46 @@
+<html>
+<head>
+<style type="text/css">
+input.hide {
+   display: none;
+}
+
+
+</style>
+
+<script type="text/javascript">
+function getCheckedElements() {
+   var imgArray = document.getElementsByName('checkboximg');
+   checkedItems.length = 0;
+ 
+   for(var i = 0; i < imgArray.length; i++) {
+      var tmp = imgArray[i].src.toString();
+      if(tmp.indexOf(imgDown) != -1) {
+         checkedItems.push(imgArray[i].id.toString());
+      }
+   }
+ 
+   var theBoxes = document.getElementsByName('cblist[]');
+   for(var i = 0; i < theBoxes.length; i++) {
+      theBoxes[i].checked = false;
+      for(var x = 0; x < checkedItems.length; x++) {
+         if(theBoxes[i].value == checkedItems[x]) {
+            theBoxes[i].checked = true;
+            break;
+         }
+      }
+   }
+}
+
+</script>
+</head>
+<body>
+<input lang="hide" name="cblist[]" type="checkbox" value="item1" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item2" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item3" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item4" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item5" />
+<input lang="hide" name="cblist[]" type="checkbox" value="item6" />
+
+</body>
+</html>

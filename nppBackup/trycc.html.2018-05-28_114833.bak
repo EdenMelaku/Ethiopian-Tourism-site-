@@ -1,0 +1,65 @@
+<html>
+<head>
+<style type="text/css">
+label[for=field_2hn10m-1] input[type="checkbox"]{
+    display: none;
+}
+label[for=field_2hn10m-1] input[type="checkbox"] {
+      background: url('image/bd/unchecked_checkbox.png') 0 0px no-repeat;
+  
+  content: "";
+  display: inline-block;
+  font-size: 12px;
+  height: 35px;
+  width: 35px;
+  line-height: 16px;
+  margin: -2px 6px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 10px;
+  background-color: #6283B2;
+   position: absolute;
+  z-index: 100;
+}
+
+label[for=field_2hn10m-1] input[type="checkbox"]:checked{
+  background: url('image/bd/checked_checkbox.png'), url('image/bd/unchecked_checkbox.png') 0 0px no-repeat;
+  height: 35px;
+  width: 35px;
+  border-radius: 10px;
+  background-color: #37924A;
+}
+
+
+
+</style>
+<script type="text/javascript">
+function changePic(var val){
+if (document.form1.check.checked){
+document.picture.src="img/1.jpg";
+}else{
+document.picture.src="img/2.jpg";
+}
+alert(val);
+}</script>
+
+</head>
+<body>
+<div class="frm_opt_container">
+   
+    <div class="frm_checkbox" id="frm_checkbox_84-1">
+        <label for="field_2hn10m-1">
+            <input type="checkbox" name="item_meta[84][]" id="field_2hn10m-1" value="Option 2"/> <img src="image/bd/1.jpg" width="300px" height="200px"></label>
+    </div>
+</div>
+
+
+
+
+
+<form name="form1" method="post" action="">
+  <input type="checkbox" name="check" value="cb1" onClick="changePic();"><img src="img/1.jpg" id="picture" name="picture"> 
+</form>
+</body>
+</html>

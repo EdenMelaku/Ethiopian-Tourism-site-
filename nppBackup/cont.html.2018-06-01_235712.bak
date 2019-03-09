@@ -1,0 +1,28 @@
+<html>	
+<head>
+<link rel="stylesheet" type="text/css" href="style/css/formStyle.css"/>
+</head>			
+<body>	
+					<div class="form-style-10">
+<h1>Contact us <span> please fill all the fields </span></h1>
+		<form>
+   
+    <div class="inner-wrap">
+        <label>name <input type="text" name="field1" /></label>
+        
+        <label>email address <input type="email" name="field4" /></label>
+		<label>message<textarea name="field2"> </textarea></label>
+    </div>
+
+   
+ 
+    <div class="button-section">
+     <input type="button" name="Sign Up" onclick="sub()"/>
+     <br/>
+	 
+     </span>
+    </div>
+</form>
+</div>
+</body>
+</html>

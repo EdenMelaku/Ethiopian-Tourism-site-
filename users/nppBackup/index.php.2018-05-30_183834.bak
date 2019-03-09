@@ -1,0 +1,127 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website</title>
+     
+        
+       
+        <link rel="stylesheet" type="text/css" href="style/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/style.css"/>
+    </head>
+    <body>
+             <div id="groupNav">
+            <div class="contact">
+            
+                <p><i class="fa fa-envelope">  </i><?php
+			$name=$_GET["name"];
+				print"$name";
+				//print" will";
+				
+				?></p>
+                <p><i class="fa fa-mobile">  <a href="logout.php" style="color:white;text_decoration:none">logout</a> </i> </p>
+                <p id="icon"><a href="http://facebook.com/" target="_blank"><i style="color:white;" class="fa fa-facebook"></i></a></p>
+                <p><a href="http://skype.com/" target="_blank"><i style="color:white;" class="fa fa-skype"></i></a></p>           
+                <p><a href="http://twitter.com/"  target="_blank"><i style="color:white;" class="fa fa-twitter"></i></a></p>
+                <p><a href="http://vk.com/"  target="_blank"><i style="color:white;" class="fa fa-asterisk"></i></a></p>
+                <p><a href="http://pinterest.com/"  target="_blank"><i style="color:white;" class="fa fa-pinterest"></i></a></p>
+                <p><a href="http://googleplus.com/"  target="_blank"><i style="color:white;" class="fa fa-google-plus"></i></a></p>
+            </div>
+         <div id="navigation">
+                 
+                <div id="navs">
+                 <p><a href="index.html"><i class="fa fa-home"></i>Home</a></p>
+                 <div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>my planner</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="http://localhost/ethioTourist.com/users/makeplann.php">make plan</a> </p>
+	   <p><a href="http://localhost/ethioTourist.com/users/viewplan.php">view plan</a> </p>
+       <p><a href="http://localhost/ethioTourist.com/users/editplan.php">edit plan</a> </p>
+       
+    </div>
+         </div>
+	<div class="dropdown">
+				 
+<p><a href="#" class="dropbtn"><i class="fa fa-book"></i>TOURIST INFO</a></p>
+            
+     <i class="fa fa-caret-down">
+	 </i>
+     
+	  </button>
+
+    <div class="dropdown-content">
+       <p><a href="school.html#ele">destinations</a> </p>
+	   <p><a href="school.html#ele">about ethiopia</a> </p>
+       <p><a href="school.html#hs">agents</a> </p>
+	   <p><a href="school.html#hs">gallery</a> </p>
+       
+    </div>
+                    </div>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>ABOUT US </a></p>
+					<p><a href="#"><i class="fa fa-mortar-board (alias)"></i>contact US </a></p>
+                    <p><a href="blogg.html"><i class="fa fa-envelope"></i>Blogg</a></p>
+					
+
+  
+   
+               
+             </div>
+            </div>
+            
+        </div>
+          
+                 
+                 
+            
+               
+        
+            
+    
+        <div id="container">
+            <h1>WELLCOME OT ETHIOPIAN TOURISM SITE</h1>
+           
+                  
+        </div>
+        			  
+		<iframe src="" width="10%" height="600px"
+                  align ="left"
+                marginwidth="0" marginheight="10">
+				 
+				<marquee direction="up" scrollamount="5"  >
+ <img src="img/country/1.jpg" alt="slide" width="50px" height="30px" border="5px" class="im" />
+  <img src="img/country/2.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+   <img src="img/country/3.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+    <img src="img/country/4.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+ <img src="img/country/5.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+  <img src="img/country/6.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+   <img src="img/country/7.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+    <img src="img/country/8.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+	 <img src="img/country/9.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+	 <img src="img/country/10.jpg" alt="slide" width="50px" height="30px" border="5px" class="im"/>
+</marquee>
+				 
+         </iframe>
+        
+     <iframe src="blog.php" width="50%" height="1000px"
+                 align ="center"
+                marginwidth="10" marginheight="10"  >
+           </iframe>
+
+    
+          <iframe src="log.html" width="36%" height="1000px"
+                 align ="right"
+                marginwidth="10" marginheight="10"  >
+           </iframe>
+			  
+			  
+			  
+			  
+        
+    </body>
+</html>
